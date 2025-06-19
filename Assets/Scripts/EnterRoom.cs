@@ -23,19 +23,23 @@ public class EnterRoom : MonoBehaviour
         if (other.tag == "Player")
         {
             ConfirmationScreen.enabled = true;
-            CameraController.instance.isInControlOfCamera = false;
+            Cursor.lockState = CursorLockMode.Confined;
+            Time.timeScale = 0;
+            CameraController.ToggleCameraControl();
         }
     }
 
     private void SwapSceneOnYes()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneName);
     }
 
     public void CloseConfirmationScreen()
     {
+        Time.timeScale = 1;
         ConfirmationScreen.enabled = false;
-        CameraController.instance.isInControlOfCamera = true;
+        CameraController.ToggleCameraControl();
     }
         
 }

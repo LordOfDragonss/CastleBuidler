@@ -9,12 +9,11 @@ public class CameraController : MonoBehaviour
 
     internal Vector3 velocity;
     internal Vector3 look;
-    public static CameraController instance;
 
     [SerializeField] GameObject markerPrefab;
     public GameObject marker;
 
-    public bool isInControlOfCamera;
+    public static bool isInControlOfCamera;
 
     public event Action OnBeforeMove;
     public CharacterController characterController;
@@ -34,7 +33,6 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        instance = this;
         characterController = GetComponent<CharacterController>();
         playerInput = GetComponent<PlayerInput>();
         moveAction = playerInput.actions["move"];
@@ -51,8 +49,15 @@ public class CameraController : MonoBehaviour
             UpdateMovement();
             UpdateLook();
             UpdateFly();
-            Cursor.lockState = CursorLockMode.Confined;
             CheckForMouseClick();
+        }
+    }
+
+    public static void ToggleCameraControl()
+    {
+        if(PlayerController.instance.movementControl == PlayerController.MovementControl.Camera)
+        {
+            isInControlOfCamera = !isInControlOfCamera;
         }
     }
 
