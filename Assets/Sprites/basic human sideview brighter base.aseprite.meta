@@ -1,0 +1,569 @@
+fileFormatVersion: 2
+guid: c09a91eb591f84542b4b5a4221319228
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 32
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 1
+    layerImportMode: 0
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 1
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 1
+    layerImportMode: 0
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 1
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638855224309734046
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: HairLong
+    originalName: 
+    pivot: {x: 0.5, y: -3.2857144}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 15
+      y: 13
+      width: 8
+      height: 7
+    spriteID: 19929e1882f0e3a4fa7398dd701f90e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 15, y: 13}
+  - name: HairBasic
+    originalName: 
+    pivot: {x: 0.5, y: -4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 15
+      y: 22
+      width: 8
+      height: 6
+    spriteID: b71b3a96f6dd5634eb038194a5fbf5f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 15, y: 22}
+  - name: MainBody
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 1
+      width: 12
+      height: 30
+    spriteID: 7937ed0f442ab8240bca1e48efffd9ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 1}
+  - name: Gloves
+    originalName: 
+    pivot: {x: 0.5, y: -2.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 59
+      width: 12
+      height: 4
+    spriteID: 0b1d9de80343e554e9d2fd17b053051c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 59}
+  - name: Eyes
+    originalName: 
+    pivot: {x: 0, y: -12.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 25
+      y: 22
+      width: 3
+      height: 2
+    spriteID: 0648fef1f99a41846b8ec6126f28f6fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 25, y: 22}
+  - name: Iris
+    originalName: 
+    pivot: {x: 0, y: -25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 25
+      y: 26
+      width: 3
+      height: 1
+    spriteID: 82499ca4c2e10a441948540972ca3d83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 25, y: 26}
+  - name: ShirtLong
+    originalName: 
+    pivot: {x: 0.54545456, y: -0.90909094}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 33
+      width: 11
+      height: 11
+    spriteID: e9e980122cb90c746bd6c847807d0d46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 33}
+  - name: ShirtShort
+    originalName: 
+    pivot: {x: 0.54545456, y: -0.90909094}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 46
+      width: 11
+      height: 11
+    spriteID: badd7650eb4de8f488a2886215c802d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 46}
+  - name: Pants
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.3}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 15
+      y: 1
+      width: 9
+      height: 10
+    spriteID: fd0aba40d63517f4fbfc8181065bfac0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 15, y: 1}
+  - name: Shoes
+    originalName: 
+    pivot: {x: 0.44444445, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 15
+      y: 30
+      width: 9
+      height: 3
+    spriteID: 117857322556755499c15562c737c0f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 15, y: 30}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 1
+    guid: 2126141997
+    name: HairLong
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: HairLong
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 23
+        width: 8
+        height: 7
+      spriteId: 19929e1882f0e3a4fa7398dd701f90e7
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 2
+    guid: 975316030
+    name: HairBasic
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: HairBasic
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 24
+        width: 8
+        height: 6
+      spriteId: b71b3a96f6dd5634eb038194a5fbf5f9
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 0
+    guid: -1473232681
+    name: MainBody
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: MainBody
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 10
+        y: 0
+        width: 12
+        height: 30
+      spriteId: 7937ed0f442ab8240bca1e48efffd9ed
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 3
+    guid: -1788453001
+    name: Gloves
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Gloves
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 10
+        y: 9
+        width: 12
+        height: 4
+      spriteId: 0b1d9de80343e554e9d2fd17b053051c
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 4
+    guid: -978837804
+    name: Eyes
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Eyes
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 25
+        width: 3
+        height: 2
+      spriteId: 0648fef1f99a41846b8ec6126f28f6fb
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 5
+    guid: -1909967360
+    name: Iris
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Iris
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 25
+        width: 3
+        height: 1
+      spriteId: 82499ca4c2e10a441948540972ca3d83
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 6
+    guid: 1991794018
+    name: ShirtLong
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ShirtLong
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 10
+        y: 10
+        width: 11
+        height: 11
+      spriteId: e9e980122cb90c746bd6c847807d0d46
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 7
+    guid: 1315856979
+    name: ShirtShort
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ShirtShort
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 10
+        y: 10
+        width: 11
+        height: 11
+      spriteId: badd7650eb4de8f488a2886215c802d7
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 8
+    guid: -288907728
+    name: Pants
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Pants
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 3
+        width: 9
+        height: 10
+      spriteId: fd0aba40d63517f4fbfc8181065bfac0
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 9
+    guid: -496679677
+    name: Shoes
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Shoes
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 0
+        width: 9
+        height: 3
+      spriteId: 117857322556755499c15562c737c0f6
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: Default
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}
