@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 
-public class PlayerController : MonoBehaviour
+public class SecondDimensionPlayerController : MonoBehaviour
 {
     public float Movementspeed;
     public float JumpForce;
