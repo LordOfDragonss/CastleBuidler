@@ -6,7 +6,6 @@ public class DungeonGeneration : MonoBehaviour
     public int length, height;
 
     public int scale;
-    public GameObject player;
 
     public GameObject[] startingRooms;
     public GameObject[] pathrooms; //0:LR 1:LRB, 2: LRT, 3: LRBT
@@ -20,15 +19,19 @@ public class DungeonGeneration : MonoBehaviour
 
     [HideInInspector]
     public static bool FIRSTSTAGEDONE = false;
+    public static bool READYFORPLAYER = false;
 
     int direction; //0 & 1 = right, 2 & 3 = left, 4 = down
     int delay = 0;
 
     public int seed;
+    public bool randomizeSeed;
 
     private void Start()
     {
         FIRSTSTAGEDONE = false;
+        if (randomizeSeed)
+            seed = Random.Range(0, 9999999);
         roomArray = new GameObject[length, height];
         Random.InitState(seed);
         transform.position = new Vector2(Random.Range(0, length), 0);
@@ -119,7 +122,7 @@ public class DungeonGeneration : MonoBehaviour
                     CreateRoom(endRooms[0]);
                     FillMap();
                     FIRSTSTAGEDONE = true;
-                    Instantiate(player, loadedRooms[0] * scale, Quaternion.identity);
+                    READYFORPLAYER = true;
                 }
             }
         }
