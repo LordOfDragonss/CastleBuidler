@@ -3,7 +3,7 @@ using UnityEngine.InputSystem.Utilities;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class EnterRoomWithClick : MonoBehaviour
+public class EnterRoom : MonoBehaviour
 {
     [SerializeField] string SceneName;
     public Canvas ConfirmationScreen;
@@ -17,9 +17,14 @@ public class EnterRoomWithClick : MonoBehaviour
         ConfirmButton.onClick.AddListener(SwapSceneOnYes);
         ExitButton.onClick.AddListener(CloseConfirmationScreen);
     }
-    private void OnMouseUp()
+
+    private void OnTriggerEnter(Collider other)
     {
-        ConfirmationScreen.enabled = true;
+        if (other.tag == "Player")
+        {
+            ConfirmationScreen.enabled = true;
+            CameraController.instance.isInControlOfCamera = false;
+        }
     }
 
     private void SwapSceneOnYes()
@@ -30,6 +35,7 @@ public class EnterRoomWithClick : MonoBehaviour
     public void CloseConfirmationScreen()
     {
         ConfirmationScreen.enabled = false;
+        CameraController.instance.isInControlOfCamera = true;
     }
         
 }

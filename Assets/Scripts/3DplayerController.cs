@@ -1,6 +1,7 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
@@ -9,12 +10,15 @@ public class PlayerController : MonoBehaviour
     public bool WASDControl;
     public bool MouseControl;
 
+    [SerializeField] CameraController CameraController;
+
     internal Vector3 velocity;
 
     public event Action OnBeforeMove;
     public CharacterController characterController;
     PlayerInput playerInput;
     InputAction moveAction;
+    NavMeshAgent navMeshAgent;
 
     [SerializeField] GameObject freelookCamera;
     [SerializeField] GameObject followCamera;
@@ -27,6 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         playerInput = GetComponent<PlayerInput>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
         moveAction = playerInput.actions["move"];
     }
 
@@ -41,6 +46,7 @@ public class PlayerController : MonoBehaviour
         }
         if (MouseControl)
         {
+            navMeshAgent.speed = movementSpeed;
             freelookCamera.SetActive(true);
             followCamera.SetActive(false);
             FollowMouseMarker();
@@ -82,7 +88,8 @@ public class PlayerController : MonoBehaviour
 
     public void FollowMouseMarker()
     {
-
+        if (CameraController.marker != null)
+            navMeshAgent.SetDestination(CameraController.marker.transform.position);
     }
 
 
