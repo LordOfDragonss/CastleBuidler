@@ -11,6 +11,9 @@ public class DungeonGeneration : MonoBehaviour
     public GameObject[] pathrooms; //0:LR 1:LRB, 2: LRT, 3: LRBT
     public GameObject[] fillerrooms;
     public GameObject[] endRooms;
+    public GameObject edgeroom;
+
+    private LayerManager layerManager;
 
 
     public GameObject[,] roomArray;
@@ -24,14 +27,19 @@ public class DungeonGeneration : MonoBehaviour
     int direction; //0 & 1 = right, 2 & 3 = left, 4 = down
     int delay = 0;
 
-    public int seed;
+    public static int seed;
     public bool randomizeSeed;
 
     private void Start()
     {
+        layerManager = LayerManager.Instance;
         FIRSTSTAGEDONE = false;
-        if (randomizeSeed)
+        if (randomizeSeed && layerManager.IsNewLayer(layerManager.CurrentLayer))
             seed = Random.Range(0, 9999999);
+        else if (!layerManager.IsNewLayer(layerManager.CurrentLayer))
+        {
+            seed = layerManager.GetCurrentLayerSeed();
+        }
         roomArray = new GameObject[length, height];
         Random.InitState(seed);
         transform.position = new Vector2(Random.Range(0, length), 0);
@@ -121,7 +129,10 @@ public class DungeonGeneration : MonoBehaviour
                     Destroy(GetRoom(transform.position));
                     CreateRoom(endRooms[0]);
                     FillMap();
+                    FillEdge();
                     FIRSTSTAGEDONE = true;
+                    if (LayerManager.Instance.IsNewLayer(LayerManager.Instance.CurrentLayer))
+                        layerManager.layers.Add(new Layer(layerManager.CurrentLayer, seed));
                     READYFORPLAYER = true;
                 }
             }
@@ -134,7 +145,7 @@ public class DungeonGeneration : MonoBehaviour
 
     void CreateRoom(GameObject room)
     {
-        GameObject tempRoom = Instantiate(room, transform.position * scale, Quaternion.identity);
+        GameObject tempRoom = Instantiate(room, transform.position * scale, Quaternion.identity,transform);
         int x = (int)transform.position.x;
         int y = -(int)transform.position.y;
         roomArray[x, y] = tempRoom;
@@ -151,13 +162,32 @@ public class DungeonGeneration : MonoBehaviour
         {
             for (int x = 0; x < length; x++)
             {
-                if(!loadedRooms.Contains(new Vector2(x, y)))
+                if (!loadedRooms.Contains(new Vector2(x, y)))
                 {
                     int r = Random.Range(0, fillerrooms.Length);
                     transform.position = new Vector2(x, -y);
                     CreateRoom(fillerrooms[r]);
                 }
             }
+        }
+    }
+
+    void FillEdge()
+    {
+        for (int y = 0; y < height; y++)
+        {
+            transform.position = new Vector2(length, -y);
+            Instantiate(edgeroom, transform.position * scale, Quaternion.identity, transform);
+            transform.position = new Vector2(-1, -y);
+            Instantiate(edgeroom, transform.position * scale, Quaternion.identity, transform);
+        }
+
+        for (int x = 0; x < length; x++)
+        {
+            transform.position = new Vector2(x, -height);
+            Instantiate(edgeroom, transform.position * scale, Quaternion.identity, transform);
+            transform.position = new Vector2(x, 1);
+            Instantiate(edgeroom, transform.position * scale, Quaternion.identity, transform);
         }
     }
 }
