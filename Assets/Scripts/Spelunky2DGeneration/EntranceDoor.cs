@@ -9,6 +9,8 @@ public class EntranceDoor : MonoBehaviour
     public bool playerLeftEntrance = false;
     LayerManager layerManager = new LayerManager();
 
+    [SerializeField] private SignText[] signs;
+
     private void Start()
     {
         layerManager = LayerManager.Instance;
@@ -36,6 +38,14 @@ public class EntranceDoor : MonoBehaviour
         if (DungeonGeneration.READYFORPLAYER && !hasPlayerSpawned)
         {
             Instantiate(Player, spawnPoint);
+            if (signs != null)
+            {
+                foreach (SignText sign in signs)
+                {
+                    if (sign != null)
+                        sign.SetText(layerManager.CurrentLayer.ToString());
+                }
+            }
             hasPlayerSpawned = true;
         }
     }
