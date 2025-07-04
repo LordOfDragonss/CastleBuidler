@@ -1,3 +1,4 @@
+using Pathfinding;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -131,9 +132,11 @@ public class DungeonGeneration : MonoBehaviour
                     FillMap();
                     FillEdge();
                     FIRSTSTAGEDONE = true;
+
                     if (LayerManager.Instance.IsNewLayer(LayerManager.Instance.CurrentLayer))
                         layerManager.layers.Add(new Layer(layerManager.CurrentLayer, seed));
                     READYFORPLAYER = true;
+                    Rescanner.SCANDONE = false;
                 }
             }
         }
@@ -142,6 +145,8 @@ public class DungeonGeneration : MonoBehaviour
             delay++;
         }
     }
+
+
 
     void CreateRoom(GameObject room)
     {

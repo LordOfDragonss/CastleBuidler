@@ -37,7 +37,7 @@ public class EntranceDoor : MonoBehaviour
     {
         if (DungeonGeneration.READYFORPLAYER && !hasPlayerSpawned)
         {
-            Instantiate(Player, spawnPoint);
+            Instantiate(Player, spawnPoint.transform.position, Quaternion.identity);
             if (signs != null)
             {
                 foreach (SignText sign in signs)
