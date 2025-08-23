@@ -11,6 +11,9 @@ public class SecondDimensionPlayerController : MonoBehaviour
     Rigidbody2D rb;
     Vector3 moveinput;
     public LayerMask floorLayers;
+    public Animator animator;
+    public GameObject Sprite;
+    float lastDirection = 1f; // 1 = right, -1 = left
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,6 +23,19 @@ public class SecondDimensionPlayerController : MonoBehaviour
     private void Update()
     {
         rb.linearVelocity = (new Vector2(moveinput.x * Movementspeed, rb.linearVelocity.y));
+        if (animator != null)
+        {
+            animator.SetBool("Walking", rb.linearVelocityX != 0);
+        }
+        if (rb.linearVelocityX != 0)
+        {
+            lastDirection = Mathf.Sign(rb.linearVelocityX);
+        }
+        if (Sprite != null)
+        {
+            float yRotation = lastDirection < 0 ? 180f : 0f;
+            Sprite.transform.rotation = Quaternion.Euler(Sprite.transform.rotation.x, yRotation, Sprite.transform.rotation.z);
+        }
     }
 
     public void OnMove(InputValue value)
@@ -31,7 +47,7 @@ public class SecondDimensionPlayerController : MonoBehaviour
     {
         if (isOnGround())
         {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
         }
     }
 
