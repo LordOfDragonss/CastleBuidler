@@ -603,6 +603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerAnim
       objectReference: {fileID: 0}
+    - target: {fileID: 8520386346202181247, guid: 1e09eb1bc3b0ccb4d914e45384402a3d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
