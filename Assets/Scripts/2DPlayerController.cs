@@ -48,6 +48,7 @@ public class SecondDimensionPlayerController : MonoBehaviour
         if (isOnGround())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
+            animator.SetTrigger("JumpTrigger");
         }
     }
 
