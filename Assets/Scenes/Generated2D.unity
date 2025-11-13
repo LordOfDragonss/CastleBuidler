@@ -32616,7 +32616,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentLayer: 0
-  layers: []
+  layers:
+  - LayerNumber: 0
+    seed: 1299008
 --- !u!4 &607135487
 Transform:
   m_ObjectHideFlags: 0

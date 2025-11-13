@@ -28,6 +28,7 @@ public class DungeonGeneration : MonoBehaviour
     int direction; //0 & 1 = right, 2 & 3 = left, 4 = down
     int delay = 0;
 
+    [SerializeField]
     public static int seed;
     public bool randomizeSeed;
 
