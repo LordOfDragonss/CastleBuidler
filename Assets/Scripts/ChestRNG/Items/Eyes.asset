@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda668e0eda89fd4e8360eaff7d100dc, type: 3}
+  m_Name: Eyes
+  m_EditorClassIdentifier: 
+  Rarity: 1
+  Name: Creepy Eyes
+  Item: {fileID: 0}
+  sprite: {fileID: 3002753974191911705, guid: 122a66ca57971d04580e07bfce6c5c15, type: 3}
+  dropchancePrecentage: 35
