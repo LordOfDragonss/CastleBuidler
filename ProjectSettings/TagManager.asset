@@ -11,11 +11,11 @@ TagManager:
   - Floor
   - Water
   - UI
+  - Player
+  - Enemy
+  - Trigger
   - CharCamera
   - MainCam
-  - Trigger
-  - 
-  - 
   - 
   - 
   - 
