@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2104661266140562035}
   - component: {fileID: 5067122907464205594}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 708078018222478273}
   - component: {fileID: 4331186914174017490}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,8 @@ GameObject:
   - component: {fileID: 2731279745151752992}
   - component: {fileID: 5353389306546548024}
   - component: {fileID: 171759462917009091}
-  m_Layer: 0
+  - component: {fileID: 4450813909065699163}
+  m_Layer: 7
   m_Name: LilFlyGuy Variant AI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,6 +346,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Destination: {fileID: 2731279745151752992}
   player: {fileID: 0}
+--- !u!114 &4450813909065699163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3787506342817943057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12340a80f8d1a394b8619d77549d1d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currenthealth: 0
+  maxhealth: 8
+  Damagetaken: 0
 --- !u!1 &4056294735335657065
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6913840336016870131}
   - component: {fileID: 6988830064056311514}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +459,7 @@ GameObject:
   - component: {fileID: 1773057407784207929}
   - component: {fileID: 3052309719537421517}
   - component: {fileID: 6919907332760308408}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: lilflyguy AI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370878895230441699}
   - component: {fileID: 4846351489510062842}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RightWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}

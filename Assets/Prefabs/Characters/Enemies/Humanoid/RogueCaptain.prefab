@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2747007270556023771}
   - component: {fileID: 881983492641859374}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gloves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 877140813757101652}
   - component: {fileID: 7124026039727555776}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ShirtLong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3519316522419838047}
   - component: {fileID: 1731782313218411249}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Iris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 1667535553049412784}
   - component: {fileID: 8458163332748580533}
   - component: {fileID: 7668410536090760821}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ninjacaptain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4724048319570600715}
   - component: {fileID: 4894206465735534978}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,8 @@ GameObject:
   - component: {fileID: 4369017201629498210}
   - component: {fileID: 7822111411605687991}
   - component: {fileID: 749813078941777162}
-  m_Layer: 0
+  - component: {fileID: 7182212894106909065}
+  m_Layer: 7
   m_Name: RogueCaptain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,6 +549,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7182212894106909065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3662453431421791704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12340a80f8d1a394b8619d77549d1d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currenthealth: 0
+  maxhealth: 20
+  Damagetaken: 0
 --- !u!1 &3758776098889391928
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,7 +574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4880335821739804528}
   - component: {fileID: 675416071447511574}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HairLong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -645,7 +661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6838301732934125512}
   - component: {fileID: 7592144527096080257}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HairBasic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -731,7 +747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5664979399374609799}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -763,7 +779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7713212355742048702}
   - component: {fileID: 5386030636842807005}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MainBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -849,7 +865,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3029426421988398211}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -881,7 +897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4786895889922845025}
   - component: {fileID: 8284216151819403237}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HairPonyTail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -968,7 +984,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2456012823235971060}
   - component: {fileID: 2744104440794711727}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +1049,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_Sprite: {fileID: 8654521811896110682, guid: 5e624135b3e58004199a8d69497fdeb8, type: 3}
   m_Color: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
   m_FlipX: 0
@@ -1055,7 +1071,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6346349621631086097}
   - component: {fileID: 5920952722832376326}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1142,7 +1158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1635997080896749090}
   - component: {fileID: 4332509544893228852}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -8,7 +8,7 @@ public class FallingEnemy : BasicGroundedCreatureAi
     bool flipped = false;
     [SerializeField]
     Transform sprite;
-
+    public HealthSystem healthSystem;
     [SerializeField]
     Transform droppedgroundDetector;
     [SerializeField]
@@ -18,12 +18,17 @@ public class FallingEnemy : BasicGroundedCreatureAi
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(healthSystem.currenthealth <= 0)
+        {
+            Death();
+        }
+        
+
         if (randomPeekTimer > 0 && !dropping)
         {
             randomPeekTimer -= 0.1f * Time.deltaTime;
@@ -48,6 +53,11 @@ public class FallingEnemy : BasicGroundedCreatureAi
         {
             transform.rotation *= Quaternion.Euler(0, 0, 90);
         }
+    }
+
+    private void Death()
+    {
+        Destroy(gameObject);
     }
 
     private void FixedUpdate()
