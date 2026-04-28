@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CreatureAnimator: {fileID: 7031219624117752236}
   Rb: {fileID: 7223972010298567925}
+  healthSystem: {fileID: 8250464699100464058}
   groundLayers:
     serializedVersion: 2
     m_Bits: 8
@@ -157,7 +158,6 @@ MonoBehaviour:
   canFlipOnWall: 0
   PlayerVision: {fileID: 1917284649860112146}
   sprite: {fileID: 2079542617093071721}
-  healthSystem: {fileID: 8250464699100464058}
   droppedgroundDetector: {fileID: 9013187625116866267}
   groundDetector: {fileID: 2387431300205452570}
 --- !u!50 &7223972010298567925
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12340a80f8d1a394b8619d77549d1d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currenthealth: 4
+  currenthealth: 6
   maxhealth: 4
   SliderPopupTime: 1
   AlwaysShowHealthBar: 0

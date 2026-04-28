@@ -479,6 +479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CreatureAnimator: {fileID: 7668410536090760821}
   Rb: {fileID: 749813078941777162}
+  healthSystem: {fileID: 7182212894106909065}
   groundLayers:
     serializedVersion: 2
     m_Bits: 8
@@ -565,7 +566,7 @@ MonoBehaviour:
   currenthealth: 0
   maxhealth: 20
   SliderPopupTime: 1
-  AlwaysShowHealthBar: 0
+  AlwaysShowHealthBar: 1
   Damagetaken: 0
   healthslider: {fileID: 8109188795112332036}
 --- !u!1 &3758776098889391928

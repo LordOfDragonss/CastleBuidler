@@ -53,6 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CreatureAnimator: {fileID: 1967727370738961174}
   Rb: {fileID: 749813078941777162}
+  healthSystem: {fileID: 6966720936338088012}
   groundLayers:
     serializedVersion: 2
     m_Bits: 8

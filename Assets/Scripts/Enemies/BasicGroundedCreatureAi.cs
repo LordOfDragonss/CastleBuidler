@@ -6,6 +6,8 @@ public class BasicGroundedCreatureAi : MonoBehaviour
     [SerializeField] internal Animator CreatureAnimator;
     [SerializeField] internal Rigidbody2D Rb;
 
+    public HealthSystem healthSystem;
+
     public LayerMask groundLayers;
     public Transform groundCheckPosition;
     public Transform wallCheckPosition;
@@ -39,9 +41,17 @@ public class BasicGroundedCreatureAi : MonoBehaviour
             hasTurned = false;
         }
 
-
+        if (healthSystem.currenthealth <= 0)
+        {
+            Death();
+        }
 
         CreatureAnimator.SetBool("Walking", IsMoving());
+    }
+
+    internal void Death()
+    {
+        Destroy(gameObject);
     }
 
     internal bool IsGrounded()

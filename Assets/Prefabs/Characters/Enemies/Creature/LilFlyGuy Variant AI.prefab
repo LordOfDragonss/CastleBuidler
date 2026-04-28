@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 2731279745151752992}
   - component: {fileID: 5353389306546548024}
   - component: {fileID: 171759462917009091}
+  - component: {fileID: 6430467873425529747}
   - component: {fileID: 4450813909065699163}
   m_Layer: 7
   m_Name: LilFlyGuy Variant AI
@@ -347,6 +348,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Destination: {fileID: 2731279745151752992}
   player: {fileID: 0}
+--- !u!114 &6430467873425529747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3787506342817943057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfadbaa1b7f82174e9ee6dbda54a38a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSystem: {fileID: 4450813909065699163}
 --- !u!114 &4450813909065699163
 MonoBehaviour:
   m_ObjectHideFlags: 0

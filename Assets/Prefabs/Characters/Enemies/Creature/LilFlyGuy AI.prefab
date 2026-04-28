@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 5353389306546548024}
   - component: {fileID: 171759462917009091}
   - component: {fileID: 1241823304252079023}
+  - component: {fileID: 526910395354650794}
   m_Layer: 7
   m_Name: LilFlyGuy AI
   m_TagString: Untagged
@@ -365,6 +366,19 @@ MonoBehaviour:
   AlwaysShowHealthBar: 0
   Damagetaken: 0
   healthslider: {fileID: 5334635887877888370}
+--- !u!114 &526910395354650794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3787506342817943057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfadbaa1b7f82174e9ee6dbda54a38a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSystem: {fileID: 1241823304252079023}
 --- !u!1 &4056294735335657065
 GameObject:
   m_ObjectHideFlags: 0
