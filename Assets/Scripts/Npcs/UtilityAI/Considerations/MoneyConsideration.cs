@@ -6,7 +6,7 @@ public class MoneyConsideration : Consideration
     [SerializeField] private AnimationCurve responseCurve;
     public override float ScoreConsideration(NPCController npc)
     {
-        score = responseCurve.Evaluate(Mathf.Clamp01(npc.needs.money / 1000f));
+        score = responseCurve.Evaluate(Mathf.Clamp01(npc.needs.money / 100f));
         return score;
     }
 }

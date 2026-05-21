@@ -4,36 +4,38 @@ using UnityEngine;
 public class AIBrain : MonoBehaviour
 {
     public Job BestJob { get; set; }
-    private NPCController controller;
+    private NPCController npc;
     public bool finishedDeciding;
+    public bool finishedExecutingBestAction;
+    public Job[] JobsAvailable;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        controller = GetComponent<NPCController>();
+        npc = GetComponent<NPCController>();
+        finishedDeciding = false;
+        finishedExecutingBestAction = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(BestJob == null)
-        {
-            DecideBestJob(controller.JobsAvailable);
-        }
     }
-    public void DecideBestJob(Job[] jobsAvailable)
+    public void DecideBestJob()
     {
+        finishedExecutingBestAction = false;
         float score = 0f;
         int nextBestJobIndex = 0;
-        for (int i = 0; i < jobsAvailable.Length; i++)
+        for (int i = 0; i < JobsAvailable.Length; i++)
         {
-            if (ScoreJob(jobsAvailable[i]) > score)
+            if (ScoreJob(JobsAvailable[i]) > score)
             {
                 nextBestJobIndex = i;
-                score = jobsAvailable[i].score;
+                score = JobsAvailable[i].score;
             }
         }
 
-        BestJob = jobsAvailable[nextBestJobIndex];
+        BestJob = JobsAvailable[nextBestJobIndex];
+        BestJob.SetRequiredDestination(npc);
         finishedDeciding = true;
     }
 
@@ -43,7 +45,7 @@ public class AIBrain : MonoBehaviour
         float modFactor = 1 - (1 / job.considerations.Length);
         for (int i = 0; i < job.considerations.Length; i++)
         {
-            float considerationScore = job.considerations[i].ScoreConsideration(controller);
+            float considerationScore = job.considerations[i].ScoreConsideration(npc);
             float makeupValue = (1 - considerationScore) * modFactor;
             float finalScore = considerationScore + makeupValue * considerationScore;
             score *= finalScore;

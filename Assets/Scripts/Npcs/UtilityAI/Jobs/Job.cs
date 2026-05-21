@@ -15,9 +15,12 @@ public abstract class Job : ScriptableObject
     }
     public Consideration[] considerations;
 
+    public Transform RequiredDestination { get; protected set; }
+
     public virtual void Awake()
     {
         score = 0;
     }
     public abstract void Execute(NPCController npc);
+    public abstract void SetRequiredDestination(NPCController npc);
 }

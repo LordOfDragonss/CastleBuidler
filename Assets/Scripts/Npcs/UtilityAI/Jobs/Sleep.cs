@@ -8,4 +8,10 @@ public class Sleep : Job
     {
         npc.DoSleep(TimeToSleep);
     }
+
+    public override void SetRequiredDestination(NPCController npc)
+    {
+        RequiredDestination = npc.destinations.BedDestination;
+        npc.mover.MoveTo(RequiredDestination.position);
+    }
 }

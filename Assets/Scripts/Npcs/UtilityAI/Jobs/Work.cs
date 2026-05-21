@@ -8,4 +8,10 @@ public class Work : Job
     {
         npc.DoWork(TimeToDoWork);
     }
+
+    public override void SetRequiredDestination(NPCController npc)
+    {
+        RequiredDestination = npc.destinations.JobDestination;
+        npc.mover.MoveTo(RequiredDestination.position);
+    }
 }
