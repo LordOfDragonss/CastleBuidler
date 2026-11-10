@@ -1,11 +1,16 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NeedsDisplay : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI hungerValue;
     [SerializeField] private TextMeshProUGUI energyValue;
     [SerializeField] private TextMeshProUGUI moneyValue;
+
+    [SerializeField] private Slider HungerSlider;
+    [SerializeField] private Slider EnergySlider;
+    [SerializeField] private Slider MoneySlider;
     public Transform followTransform;
     private Transform mainCameraTransform;
     // Start is called before the first frame update
@@ -26,5 +31,9 @@ public class NeedsDisplay : MonoBehaviour
         hungerValue.text = hunger.ToString();
         energyValue.text = energy.ToString();
         moneyValue.text = money.ToString();
+
+        HungerSlider.value = hunger;
+        EnergySlider.value = energy;
+        MoneySlider.value = money;
     }
 }

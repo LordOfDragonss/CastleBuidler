@@ -11,6 +11,7 @@ public class Work : Job
 
     public override void SetRequiredDestination(NPCController npc)
     {
+        if (npc.destinations.JobDestination == null) return;
         RequiredDestination = npc.destinations.JobDestination;
         npc.mover.MoveTo(RequiredDestination.position);
     }

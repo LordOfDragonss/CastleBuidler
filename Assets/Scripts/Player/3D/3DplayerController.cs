@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         moveAction = playerInput.actions["move"];
+        UpdateControlMode();
     }
 
     private void Update()
